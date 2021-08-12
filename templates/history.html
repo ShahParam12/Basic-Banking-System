@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}Transaction History{% endblock title %}
+
+{% block body %}
+
+<div class="container-fluid px-0">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img src="https://images.ctfassets.net/izij9rskv5y1/OvCCzxZiNxSudhL4xyK1W/d56a7458aca3f6c47b07838ffe1b14c5/send-to-receive-money-transfer.png" width="1380" height="350" class="d-block" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1 class="text-center my-3"></h1>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="mbr-white col-md-10">
+            <h2 class="mbr-section-title align-center  pb-3 mbr-fonts-style display-1">See All Transaction History</h2>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    {%if tc%}
+
+    <table class="table">
+        
+        <thead>
+            <tr>
+                
+                <th scope="col">Sender</th>
+                <th scope="col">Receiver</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for t in tc %}
+            <tr>
+
+                <td>{{t.sname}}</td>
+                <td>{{t.rname}}</td>
+                <td>{{t.money}}</td>
+                <td>{{t.tdate}}</td>
+
+            </tr>
+            {% endfor %}
+
+        </tbody>
+        {% endif %}
+    </table>
+</div>
+
+
+
+
+<div class="mb-5">
+</div>
+
+{% endblock body %}

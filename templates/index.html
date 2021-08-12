@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<div class="container-fluid px-0">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+     
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/7/29/1406657029859/Bank-of-England-014.jpg" width="1380" height="550" class="d-block " alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style=”color:green;”>WELCOME TO THE SPARKS BANK</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.metosin.fi/img/about3.650.jpg"  width="1380" height="550" class="d-block" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <b>
+           <h1> Transfering Money Is Easy </h1>
+          </b>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="album py-4 bg-light">
+  <div class="container my-3">
+    <center>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <a href="/view_customer"><img src="https://th.bing.com/th/id/R.1ca36adc4acf3d34c9a994210d06db43?rik=pm0sGnXCM1V%2bNQ&riu=http%3a%2f%2fmarketingland.com%2fwp-content%2fml-loads%2f2017%2f03%2fpersonalization-network-segmentation-targeting-customer-ss-1920.jpg&ehk=uWK7jIE6Yae85f%2bx3kdIYKgsLwprXkTT28sHjg1Cr%2bU%3d&risl=&pid=ImgRaw&r=0" width="360" height="250" class="d-block" alt="...">
+            </a>
+            <div class="card-body">
+              <h4 class="card-text">View All Customer</h4>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <a href="/make_transaction"><img src="https://th.bing.com/th/id/OIP.REJjzGgf311QjMIDVM13pgHaE8?pid=ImgDet&rs=1" width="360" height="250" class="d-block" alt="..."></a>
+            <div class="card-body">
+              <h4 class="card-text">Make a Transaction</h4>
+              <div class="d-flex justify-content-between align-items-center">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <a href="/history"><img src="https://source.unsplash.com/hpjSkU2UYSU/500x300" width="360" height="250" class="d-block" alt="..."></a>
+            <div class="card-body">
+              <h4 class="card-text">Transaction History</h4>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+  </div>
+</div>
+
+
+
+{% endblock body %}
